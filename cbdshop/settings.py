@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'cbdshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'carzone_db',
+        'USER': 'postgres', # attention : remplacez par votre nom d'utilisateur
+        'PASSWORD': 'boubou',
+        'HOST': '',
+        'PORT': '5432',
+        # 'ATOMIC_REQUESTS': True,
+
     }
 }
 
